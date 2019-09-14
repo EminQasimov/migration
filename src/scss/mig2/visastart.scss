@@ -1,0 +1,135 @@
+.visa-index {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0 !important;
+  .hero {
+    background-image: url(../../public/images/mig2/visabg.jpg);
+  }
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 21%;
+    left: -26%;
+    z-index: -11;
+    width: 600px;
+    height: 600px;
+    transform: rotate(45deg);
+    background: rgb(241, 232, 247);
+    @media (max-width: 1250px) {
+      bottom: 31%;
+    }
+    @media (max-width: 1012px) {
+      left: -38%;
+    }
+    @media (max-width: 777px) {
+      left: -61%;
+      bottom: 37%;
+    }
+    @media (max-width: 550px) {
+      left: -114%;
+    }
+  }
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 21%;
+    right: -8%;
+    z-index: -11;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    background: rgb(241, 232, 247);
+    @media (max-width: 1250px) {
+      bottom: 31%;
+    }
+    @media (max-width: 1120px) {
+      right: -12%;
+    }
+    @media (max-width: 790px) {
+      right: -15%;
+      bottom: 37%;
+    }
+    @media (max-width: 550px) {
+      right: -22%;
+    }
+    @media (max-width: 450px) {
+      right: -32%;
+      bottom: 27%;
+    }
+  }
+  .index-wrap {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 85%;
+  }
+  .index-item {
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    margin-bottom: 80px;
+
+    a {
+      color: #555;
+      text-decoration: none;
+    }
+    &:hover span {
+      background: #fe4601;
+      &::after {
+        background: #fe4601 url(../../public/images/mig2/visa-index1-icon.png)
+          center / 40px auto no-repeat;
+      }
+    }
+    span {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      transform: translateY(-50%) rotate(45deg);
+      background: #7519b0;
+      transition: all 0.3s;
+
+      &::after {
+        content: " ";
+        display: block;
+        width: 100px;
+        height: 100px;
+        transform: rotate(-45deg);
+        transition: all 0.3s;
+        background: #7519b0 url(../../public/images/mig2/visa-index1-icon.png)
+          center / 40px auto no-repeat;
+      }
+    }
+  }
+  .index-img {
+    height: 250px;
+    background: #fff url(../../public/images/mig2/visa-index1.jpg) center /
+      cover;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -21px;
+    padding-bottom: 20px;
+  }
+  .right-item {
+    .index-img {
+      background: #fff url(../../public/images/mig2/visa-index2.jpg) center /
+        cover;
+    }
+    &:hover span {
+      background: #fe4601;
+      &::after {
+        background: #fe4601 url(../../public/images/mig2/visa-index2-icon.png)
+          center / 40px auto no-repeat;
+      }
+    }
+    span {
+      &::after {
+        background: #7519b0 url(../../public/images/mig2/visa-index2-icon.png)
+          center / 40px auto no-repeat;
+      }
+    }
+  }
+}

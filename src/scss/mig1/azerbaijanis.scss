@@ -1,0 +1,104 @@
+.az {
+  .hero {
+    background: #9783a3 url(../../public/images/mig1/azerisbg.jpg) center /
+      cover no-repeat;
+  }
+
+  .container {
+    font-size: 24px;
+    @media screen and (max-width: 1000px) {
+      font-size: 20px;
+      .col-8 {
+        padding-right: 0px !important;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      padding: 30px;
+    }
+    @media screen and (max-width: 768px) {
+      .row {
+        flex-direction: column !important;
+      }
+      .col-4,
+      .col-8 {
+        max-width: 100%;
+        text-align: center;
+      }
+      img {
+        transform: none !important;
+        margin-bottom: 40px;
+      }
+    }
+    img {
+      max-width: 100%;
+      transform: scale(0.9);
+      transform-origin: left center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .text1,
+  .text3 {
+    margin-top: 60px;
+    .col-8 {
+      margin-left: -30px;
+      padding-right: 80px;
+    }
+    span {
+      color: #f24704;
+    }
+    h2 {
+      color: #f24704;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    &::before {
+      content: " ";
+      display: block;
+      width: 600px;
+      height: 600px;
+      // background: #f1e8f7;
+      transform: translate(-120%, 0%) rotate(-45deg);
+      border: 300px solid #f1e8f7;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      position: absolute;
+    }
+  }
+
+  .text2 {
+    margin-top: -50px;
+    .col-8 {
+      padding-right: 100px;
+    }
+    p {
+      margin-top: 50px;
+    }
+    img {
+      transform: scale(1);
+      box-shadow: none;
+    }
+
+    &::before {
+      content: " ";
+      display: block;
+      width: 900px;
+      height: 900px;
+      // background: #f1e8f7;
+      transform: translate(110%, 0%) rotate(-45deg);
+      border: 500px solid #f1e8f7;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      position: absolute;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  .text3 {
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+}

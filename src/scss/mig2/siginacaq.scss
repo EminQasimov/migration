@@ -1,0 +1,96 @@
+.siginacaq {
+  position: relative;
+  padding: 0 !important;
+  .hero {
+    background: url(../../public/images/mig2/siginacaqbg.jpg) center top / cover
+      fixed;
+  }
+
+  article {
+    font-size: 20px;
+    width: 36%;
+    text-align: justify;
+    padding: 100px 0;
+    transform: translateX(40%);
+    @media (max-width: 980px) {
+      width: 80%;
+      transform: translateX(13%);
+      text-shadow: 0 0 0 #000, 0 0 0 #000;
+    }
+    a {
+      background: #8202a2;
+      padding: 14px 40px 14px 10px;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      white-space: nowrap;
+      margin: 50px 0;
+      display: block;
+      width: 400px;
+      text-shadow: 0 0 1px #fff;
+      @media (max-width: 680px) {
+        transform: scale(0.8);
+        margin-left: -50px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &::after {
+        content: " ";
+        display: inline-block;
+        width: 10px;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        border: 28px solid transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        transform: translateX(99%);
+        border-left-color: #8202a2;
+      }
+    }
+    p {
+      margin-bottom: 24px;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .wrapper {
+    position: relative;
+  }
+  .right-img {
+    width: 100%;
+    height: 800px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    z-index: -19;
+    overflow: hidden;
+    right: 0;
+    @media (max-width: 980px) {
+      opacity: 0.3;
+    }
+    @media (max-width: 680px) {
+      height: 550px;
+    }
+    span {
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .img1 {
+      height: 100%;
+    }
+    .img2 {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

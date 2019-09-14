@@ -1,0 +1,81 @@
+.apply {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0 !important;
+  .hero {
+    background-image: url(../../public/images/mig2/visabg.jpg);
+  }
+  .apply-wrap {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .apply-item {
+    width: 22%;
+    min-width: 240px;
+    margin: 1%;
+    background: #7519b0;
+    transition: all 0.3s;
+    vertical-align: top;
+    cursor: pointer;
+    &:hover {
+      background: #fe4601;
+      .apply-img::after,
+      .apply-img::before {
+        background: #fe4601;
+      }
+    }
+    display: inline-block;
+    &:nth-child(1) > div {
+      background: #fff url(../../public/images/mig2/apply1.jpg) center / cover;
+    }
+    &:nth-child(2) > div {
+      background: #fff url(../../public/images/mig2/apply2.jpg) center / cover;
+    }
+    &:nth-child(3) > div {
+      background: #fff url(../../public/images/mig2/apply3.jpg) center / cover;
+    }
+    &:nth-child(4) > div {
+      background: #fff url(../../public/images/mig2/apply4.jpg) center / cover;
+    }
+  }
+  .apply-img {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: " ";
+      display: inline-block;
+      width: 160%;
+      height: 200px;
+      background: #7519b0;
+      transition: all 0.3s;
+      position: absolute;
+      bottom: -80%;
+      left: -29%;
+      transform: rotate(25deg);
+    }
+    &::before {
+      content: " ";
+      display: inline-block;
+      width: 160%;
+      transition: all 0.3s;
+      height: 200px;
+      background: #7519b0;
+      position: absolute;
+      bottom: -80%;
+      right: -29%;
+      transform: rotate(-25deg);
+    }
+  }
+  h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 60px;
+    font-weight: 700;
+  }
+}

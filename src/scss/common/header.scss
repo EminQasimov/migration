@@ -1,0 +1,289 @@
+.fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  background: #7519b0;
+  padding: 18px 60px !important;
+  width: 100%;
+  transition: all 0.3s linear;
+}
+
+.hero {
+  height: 423px;
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  background: #9783a3 url(../../public/images/mig1/bg.jpg) center / cover
+    no-repeat;
+  // background-attachment: fixed !important; // i need 100% bg images not half screen pls full screen size images need
+  // background-position: center 60vh !important;
+  // background-size: 100% 50%;
+
+  .wrapper {
+    position: relative;
+    z-index: 9;
+    height: 100%;
+  }
+  &::after {
+    content: " ";
+    background: rgba(53, 5, 63, 0.521);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    & > a img {
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  h1 {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    animation: 1.3s ease-out 0s 1 show;
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.menu-list {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  margin-right: 120px;
+
+  a {
+    color: #fff;
+    font-size: 15px;
+    padding: 20px;
+    font-weight: 700;
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+}
+
+.fixed .lang {
+  top: 18px !important;
+}
+
+.lang {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  z-index: 999;
+  @media (max-width: 500px) {
+    a {
+      font-size: 0px !important;
+    }
+    img {
+      margin-right: 0px !important;
+    }
+  }
+  &:hover {
+    a {
+      transform: scaleY(1);
+      &:first-child {
+        border-radius: 5px 5px 0 0;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background: #7519b0;
+    transform: scaleY(0);
+    border-top: 1px solid #fff;
+    transition: all 0.4s;
+    &:first-child {
+      transform: scaleY(1);
+      border-radius: 5px;
+      border-top: none;
+    }
+    &:last-child {
+      border-radius: 0 0 5px 5px;
+    }
+    &:hover {
+      opacity: 0.7;
+      text-decoration: none;
+    }
+  }
+  img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+.navbar-light .navbar-toggler {
+  border: none !important;
+  padding: 20px;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+.menu-list {
+  @media (max-width: 999px) {
+    // box-shadow:0 3px 14px rgba(54, 31, 69, 0.58);
+    transition: animation 0.2s;
+    animation: show2 0.3s ease;
+    z-index: 999;
+    overflow: hidden;
+  }
+}
+menu {
+  background: #f1f1f1;
+  z-index: 9999;
+  // box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
+  // border-bottom: 1px solid #c6c6c6;
+  nav {
+    padding: 0 !important;
+    width: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-link.nav-link.nav-link {
+    color: #333;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 16px 20px !important;
+    // border-right: 2px solid #fff !important;
+    font-family: Verdana, "Montserrat", sans-serif !important;
+
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    &:last-child {
+      border: none;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #f24704 !important;
+      &::after {
+        bottom: 0px;
+      }
+    }
+    &::after {
+      content: " ";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -3px;
+      background: #f24704;
+      display: block;
+      transition: all 0.3s;
+      left: 0;
+    }
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+@media (max-width: 1024px) {
+  nav ul.menu-list {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    background: #7519b0;
+    left: 0;
+    top: 77px;
+    width: 100%;
+
+    li {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  .menu-icon {
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s;
+    margin-left: auto;
+    margin-right: 140px;
+    padding: 4px 8px;
+    border: 1px solid #c8a4e0;
+    border-radius: 4px;
+    transform: scale(0.9);
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul.menu-list {
+    right: 16px !important;
+    top: 77px !important;
+  }
+  .menu-icon {
+    margin-right: 40px;
+  }
+}
+
+.activeLink {
+  color: #f24704 !important;
+  // border-bottom: 2px solid #f24704 !important;
+  &::after {
+    bottom: 0px !important;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show2 {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 312px;
+    opacity: 1;
+  }
+}

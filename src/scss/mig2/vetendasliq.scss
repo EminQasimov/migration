@@ -1,0 +1,215 @@
+.vetendasliq {
+  position: relative;
+  padding: 0 !important;
+  .hero {
+    background: url(../../public/images/mig2/vetendasliqbg.jpg) center / cover;
+  }
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 21%;
+    left: -26%;
+    z-index: -11;
+    width: 600px;
+    height: 600px;
+    transform: rotate(45deg);
+    background: rgb(241, 232, 247);
+    @media (max-width: 1250px) {
+      bottom: 31%;
+    }
+    @media (max-width: 1012px) {
+      left: -38%;
+    }
+    @media (max-width: 777px) {
+      left: -61%;
+      bottom: 37%;
+    }
+    @media (max-width: 550px) {
+      left: -114%;
+    }
+  }
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 21%;
+    right: -8%;
+    z-index: -11;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    background: rgb(241, 232, 247);
+    @media (max-width: 1250px) {
+      bottom: 31%;
+    }
+    @media (max-width: 1120px) {
+      right: -12%;
+    }
+    @media (max-width: 790px) {
+      right: -15%;
+      bottom: 37%;
+    }
+    @media (max-width: 550px) {
+      right: -22%;
+    }
+    @media (max-width: 450px) {
+      right: -32%;
+      bottom: 27%;
+    }
+  }
+
+  .veten {
+    text-align: center;
+    margin: 50px auto;
+    padding: 0 50px;
+    margin-bottom: 100px;
+    .activeVeten {
+      .triangle {
+        opacity: 1 !important;
+      }
+      .wrapit::after {
+        background: rgba(242, 72, 4, 0.56) !important;
+      }
+    }
+    .veten-item {
+      width: 32%;
+      height: 500px;
+      margin: 0.5%;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+      &:hover .triangle {
+        opacity: 1;
+      }
+      .wrapit {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        &::before {
+          content: " ";
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: all 0.3s;
+        }
+
+        &:hover::before {
+          transform: scale(1.04);
+        }
+        &:hover::after {
+          background: rgba(242, 72, 4, 0.56);
+        }
+        &::after {
+          content: " ";
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: all 0.4s;
+          background: rgba(118, 25, 176, 0.56);
+        }
+      }
+    }
+    .triangle {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: 0;
+      transition: all 0.3s;
+      left: 50%;
+      border: 50px solid transparent;
+      border-top-color: red;
+      z-index: 9;
+      opacity: 0;
+      transform: translate(-50%, 110%);
+      @media (max-width: 700px) {
+        opacity: 1;
+      }
+    }
+    h1 {
+      font-weight: 700;
+      text-align-last: left;
+      position: relative;
+      z-index: 99;
+      color: #fff;
+      margin: 40px;
+      opacity: 0.9;
+      @media (max-width: 860px) {
+        font-size: 22px;
+      }
+      @media (max-width: 700px) {
+        font-size: 32px;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 99;
+      margin: 10px 20px;
+      transform: scale(0.7);
+      @media (max-width: 860px) {
+        margin: 0px 10px;
+        transform: scale(0.5);
+      }
+      @media (max-width: 700px) {
+        margin: 10px 20px;
+        transform: scale(0.7);
+      }
+    }
+  }
+  .v1 .wrapit::before {
+    background: url(../../public/images/mig2/veten1.jpg) center / cover;
+  }
+  .v2 .wrapit::before {
+    background: url(../../public/images/mig2/veten2.jpg) center / cover;
+  }
+  .v3 .wrapit::before {
+    background: url(../../public/images/mig2/veten3.jpg) center / cover;
+  }
+  .veten-content {
+    margin: 70px 10px;
+    padding: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    font-size: 19px;
+    text-align: left;
+    display: none;
+    background: #fff;
+    // min-height: 260px;
+    // text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    // font-family: Verdana;
+    @media (max-width: 700px) {
+      display: none !important;
+    }
+  }
+  .redIcon {
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    background: red;
+    transform: rotate(45deg);
+    display: inline-block;
+  }
+  .veten-content-hide {
+    margin: 70px auto;
+    padding: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    text-align: left;
+    display: none;
+    background: #fff;
+    @media (max-width: 700px) {
+      display: block;
+    }
+  }
+}

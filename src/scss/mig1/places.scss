@@ -1,0 +1,224 @@
+.places {
+  padding-right: 0 !important;
+  .hero {
+    background: url(../../public/images/mig1/placesbg.jpg) center / cover;
+  }
+  .modal {
+    padding-right: 2px !important;
+  }
+  .loadMore {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: -1px;
+    margin-bottom: 50px;
+  }
+  .gradient {
+    position: relative;
+    &::after {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 300px;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.6),
+        40%,
+        white 100%
+      );
+      position: absolute;
+      bottom: 0;
+      @media screen and (max-width: 768px) {
+        height: 150px;
+      }
+    }
+  }
+  .btn-load-more {
+    font-size: 20px;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f24704;
+    width: 300px;
+    height: 160px;
+    font-weight: 400;
+    padding-bottom: 50px;
+    clip-path: polygon(50% 100%, 100% 0, 0 0);
+    display: block;
+    transition: all 0.3s;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    position: absolute;
+    bottom: -20px;
+    &:hover {
+      opacity: 0.7;
+      transform: translateX(-50%) scale(0.98);
+    }
+    &:active {
+      opacity: 0.7;
+      transform: translateX(-50%) scale(0.9);
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      width: 150px;
+      height: 80px;
+    }
+  }
+
+  .btn-load-more:hover {
+    cursor: pointer;
+  }
+
+  .item {
+    display: inline-block;
+    background: #fff;
+    width: calc(100% / 3);
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+
+    cursor: pointer;
+    p {
+      font-size: 34px;
+      padding: 30px;
+      text-align: center;
+
+      @media (max-width: 1080px) {
+        padding: 14px !important;
+        font-size: 20px;
+      }
+      @media (max-width: 768px) {
+        padding: 10px !important;
+        font-size: 14px;
+      }
+      @media (max-width: 500px) {
+        font-size: 12px;
+      }
+    }
+    .inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(119, 57, 186, 0.7);
+      opacity: 0;
+      color: #fff;
+      transition: all 0.3s;
+      perspective: 600px;
+
+      p:nth-child(2) {
+        display: none;
+      }
+    }
+    .info-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: #f24704;
+      transition: transform 0.3s;
+      transform: rotateX(90deg) rotateZ(45deg);
+      position: absolute;
+      top: 70%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+      span {
+        transform: rotateZ(-45deg) translate(4%, -50%);
+        display: block;
+        font-size: 18px;
+        @media (max-width: 768px) {
+          font-size: 12px;
+          transform: rotateZ(-45deg) translate(-3%, -50%);
+        }
+        @media (max-width: 500px) {
+          font-size: 10px;
+          transform: rotateZ(-45deg) translate(-5%, -50%);
+        }
+        &::after {
+          content: "ətraflı";
+        }
+        &::before {
+          content: " ";
+          background: url(../../public/images/mig1/info.png) center / contain
+            no-repeat;
+          width: 30px;
+          height: 20px;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 4px;
+          @media (max-width: 500px) {
+            width: 20px;
+            height: 10px;
+          }
+        }
+      }
+    }
+    &:hover .info-img {
+      opacity: 1;
+      transform: rotateX(0deg) rotateZ(45deg);
+    }
+    &:hover .inner {
+      opacity: 1;
+    }
+    img {
+      //   object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .close {
+    color: #fff;
+    font-size: 14px;
+    background: #f24704;
+    opacity: 1;
+    height: 30px;
+    width: 30px;
+  }
+  .modal-body {
+    display: flex;
+    @media (max-width: 992px) {
+      display: block;
+      .imgwrap {
+        width: 100% !important;
+      }
+
+      .modal-text {
+        padding: 0;
+      }
+    }
+  }
+  .modal-content {
+    border-radius: 0;
+    .imgwrap {
+      width: 300px;
+      height: 350px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    p {
+      font-size: 16px;
+      @media (max-width: 1199px) {
+        font-size: 13px;
+      }
+    }
+  }
+  .modal-title {
+    color: #f24704;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .modal-text {
+    flex: 1;
+    padding: 0 20px;
+  }
+}

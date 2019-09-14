@@ -1,0 +1,186 @@
+.visa-novleri {
+  position: relative;
+  padding: 0 !important;
+  .hero {
+    background-image: url(../../public/images/mig2/visabg.jpg);
+  }
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 21%;
+    left: -26%;
+    z-index: -11;
+    width: 600px;
+    height: 600px;
+    transform: rotate(45deg);
+    background: rgb(241, 232, 247);
+    @media (max-width: 1250px) {
+      bottom: 31%;
+    }
+    @media (max-width: 1012px) {
+      left: -38%;
+    }
+    @media (max-width: 777px) {
+      left: -61%;
+      bottom: 37%;
+    }
+    @media (max-width: 550px) {
+      left: -114%;
+    }
+  }
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 21%;
+    right: -8%;
+    z-index: -11;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    background: rgb(241, 232, 247);
+    @media (max-width: 1250px) {
+      bottom: 31%;
+    }
+    @media (max-width: 1120px) {
+      right: -12%;
+    }
+    @media (max-width: 790px) {
+      right: -15%;
+      bottom: 37%;
+    }
+    @media (max-width: 550px) {
+      right: -22%;
+    }
+    @media (max-width: 450px) {
+      right: -32%;
+      bottom: 27%;
+    }
+  }
+  .note {
+    margin: 40px auto;
+    width: 85%;
+
+    p {
+      padding: 30px 15px;
+      background: #fff;
+      font-size: 18px;
+      color: red;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .index-wrap {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 85%;
+  }
+  .selectedVisa {
+    span {
+      opacity: 1 !important;
+    }
+    &::after {
+      background: rgba(254, 68, 1, 0.6) !important;
+    }
+  }
+  .index-item {
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    position: relative;
+    cursor: pointer;
+    &:hover::after {
+      background: rgba(254, 68, 1, 0.6);
+    }
+    &::after {
+      content: " ";
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s;
+      background: rgba(118, 25, 176, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 8;
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9;
+      transition: all 0.3s;
+      border: 30px solid transparent;
+      border-top-color: #fe4401;
+      opacity: 0;
+    }
+  }
+  .index-img {
+    height: 200px;
+    background: #fff url(../../public/images/mig2/visanovleri1.jpg) center /
+      cover;
+  }
+
+  .right-item {
+    .index-img {
+      background: #fff url(../../public/images/mig2/visanovleri2.jpg) center /
+        cover;
+    }
+  }
+  h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    z-index: 9;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
+  }
+
+  .index-wrap-menu {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 85%;
+    // display: none;
+    h2 {
+      text-transform: uppercase;
+      color: #050505;
+      font-size: 20px;
+      font-weight: 700;
+      width: 100%;
+      transition: all 0.3s;
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+      padding: 20px 10px;
+      cursor: pointer;
+      &:hover {
+        background: #fe4401;
+        color: #fff;
+      }
+    }
+  }
+  .left,
+  .right {
+    display: none;
+  }
+  @media (max-width: 700px) {
+    .index-wrap,
+    .index-wrap-menu,
+    .note {
+      width: 100%;
+    }
+    h2 {
+      font-size: 16px !important;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .index-wrap-menu h2 {
+      font-size: 11px !important;
+    }
+  }
+}

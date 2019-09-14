@@ -1,0 +1,199 @@
+@import "../common/index.scss";
+@import "../common/header.scss";
+@import "../common/footer.scss";
+
+.items {
+  .wrapper {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .item {
+    width: 301px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 18px;
+    background: #fff;
+    transform: scale(0.99);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    z-index: 9;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 17px;
+    color: #333;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 10px;
+    padding: 20px 0;
+  }
+}
+
+.head {
+  width: 100%;
+  height: 53px;
+  position: relative;
+  background: url(../../public/images/mig1/welcome1.png) center / 314px 188px
+    no-repeat;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  img {
+    width: 100%;
+    height: 200%;
+  }
+  span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.info {
+  margin: 60px auto;
+  position: relative;
+  &::before {
+    content: " ";
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #f1e8f7;
+    transform: translate(-60%, -60%) rotate(45deg);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    img {
+      margin-left: -50px;
+    }
+  }
+  .text {
+    flex: 1;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+    h2 {
+      color: #f24704;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.info2 {
+  margin: 60px auto;
+  position: relative;
+  &::before {
+    content: " ";
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    z-index: -3;
+    right: 0;
+    top: 0;
+    background: #7519b0;
+    transform: translate(55%, -25%) rotate(45deg);
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    .img {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background: url(../../public/images/mig1/dance.jpg) center / 400px
+        no-repeat;
+      // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      box-shadow: -15px 5px 36px rgba(0, 0, 0, 0.1);
+
+      &::before {
+        content: " ";
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background: transparent;
+        box-shadow: 0 6px 36px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .text {
+    flex: 1;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+    h2 {
+      color: #f24704;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .items {
+    .container {
+      display: block;
+      text-align: center;
+      .item {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .info::before {
+    display: none;
+  }
+  footer {
+    text-align: center;
+  }
+  .info2,
+  .info {
+    .container {
+      text-align: center;
+      display: block;
+      & > img {
+        margin: 0;
+      }
+      .img {
+        margin: 0;
+        display: inline-block;
+        &::before {
+          position: relative;
+        }
+      }
+    }
+  }
+}

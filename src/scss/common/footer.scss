@@ -1,0 +1,66 @@
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  a {
+    display: inline-block;
+    margin: 4px;
+  }
+  img {
+    height: 40px;
+  }
+
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    img {
+      height: 30px;
+    }
+  }
+  & > div {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    p {
+      text-align: right;
+    }
+  }
+}
+
+footer {
+  position: relative;
+  .wrapper {
+    padding: 30px 100px;
+   
+    @media (max-width: 768px) {
+      padding: 30px 20px;
+      & > div > img{
+        width: 50%;
+        float: left;
+        transform: scale(0.7);
+      }
+    }
+    @media (max-width: 768px) {
+      &:first-child {
+        text-align: center;
+      }
+      .copy {
+        padding-bottom: 0 !important;
+        & > div {
+          display: block;
+          text-align: center;
+          width: 100%;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.up {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+}

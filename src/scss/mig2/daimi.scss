@@ -1,0 +1,316 @@
+$n: 9;
+$size: 640px;
+$half: $size - $size/4.8;
+
+.daimi {
+  .hero {
+    background: url(../../public/images/mig2/daimibg.jpg) center / cover fixed;
+  }
+  .center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 64px auto;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: -webkit-radial-gradient(white, black);
+    perspective: 1000px;
+    @media (min-width: 576px) {
+      max-width: 100%;
+    }
+  }
+  .row {
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+      .daimi-item {
+        display: inline-block;
+      }
+      .col-7 {
+        max-width: 100%;
+        text-align: center;
+        flex: 1;
+        margin-bottom: 50px;
+      }
+      .col-5 {
+        width: 500px;
+        max-width: 100%;
+        text-align: center;
+        flex: 1;
+      }
+    }
+  }
+  .col-7 .daimi-item {
+    padding: 20px;
+    img {
+      transform-origin: center top;
+      transform: scale(0.9);
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  .col-5 .daimi-item {
+    img {
+      height: 400px;
+      object-fit: cover;
+      width: 100%;
+    }
+    p {
+      min-height: 138px;
+      padding: 0 20px;
+    }
+  }
+  .daimi-item {
+    min-height: 500px;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  }
+}
+.daimi-sec {
+  margin: 50px auto;
+  img {
+    max-width: 100%;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+.cont {
+  min-width: $size;
+  min-height: $size;
+  width: $size;
+  height: $size;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  transform: rotate(-1deg);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
+  perspective: 1000px;
+  // box-shadow: 0 0 14px #000;
+  @media (max-width: 800px) {
+    transform: rotate(-1deg) scale(0.8);
+    transform-origin: center;
+  }
+  @media (max-width: 600px) {
+    transform: rotate(-1deg) scale(0.66);
+  }
+
+  @media (max-width: 450px) {
+    transform: rotate(-1deg) scale(0.45);
+  }
+  .middle {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    left: 1%;
+    top: 1%;
+    transform: scale(0.46) translateZ(10px);
+    // transition: all 0.2s linear;
+    z-index: 999;
+    background: transparent;
+    display: block;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 22px solid #fff;
+    padding: 80px;
+    background-clip: content-box;
+    pointer-events: none;
+    filter: drop-shadow(0 0 64px rgba(63, 19, 2, 0.76));
+    // box-shadow:0 0 220px #111;
+    &::after {
+      content: " ";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 60px solid transparent;
+      border-bottom: 60px solid #fff;
+      position: absolute;
+      opacity: 0;
+      transition: all 0.4s;
+      top: -126px;
+      left: 242px;
+    }
+  }
+  .middle2 {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    left: 1%;
+    top: 1%;
+    transform: scale(0.46) translateZ(10px);
+    transition: all 0.2s linear;
+    background: transparent;
+    display: block;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 80px;
+    background: url(../../public/images/mig2/orta.jpg) center / cover;
+    background-clip: content-box;
+    pointer-events: none;
+    z-index: 9999;
+  }
+}
+
+.p {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transform-origin: right bottom;
+  overflow: hidden;
+  transition: all 300ms;
+  background: #654e78;
+  box-shadow: inset 4px -7px 6px 0px rgba(37, 27, 45, 0.42);
+  // -webkit-mask-image: -webkit-radial-gradient(white, black);
+  // mask-image: -webkit-radial-gradient(white, black);
+  perspective: 1000px;
+  &:hover {
+    cursor: pointer;
+    background: #f34705;
+    // z-index: 999;
+    box-shadow: -8px -8px 10px 17px rgba(37, 27, 45, 0.3);
+  }
+  .span1 {
+    width: $half;
+    height: $half;
+    box-sizing: border-box;
+    transition: opacity 0.1s linear, transform 0.1s linear;
+    text-align: center;
+    font-size: 15px;
+    background: transparent;
+    color: #fff;
+    user-select: none;
+    margin: -5px -47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .span2 {
+    display: inline-block;
+    width: 68px;
+    height: 74px;
+    background: #fff;
+    color: black;
+    position: absolute;
+    left: 210px;
+    top: 210px;
+    box-shadow: inset 4px -7px 7px 0px rgba(37, 27, 45, 0.3),
+      inset -4px -7px 5px 0px rgba(37, 27, 45, 0.3),
+      inset 0px 3px 4px 0px rgba(37, 27, 45, 0.3);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .img2 {
+      display: none;
+    }
+  }
+}
+@for $i from 1 through $n {
+  .pie#{$i} {
+    transform: rotate(#{$i * 360 / $n - 8}deg) skew(#{90 - 360 / $n}deg);
+    z-index: $i;
+    .span1 {
+      transform: skew(#{- (90 - 360 / $n)}deg)
+        rotate(#{-$i * 360 / $n + 8}deg); //reset parent transform
+    }
+    // .span2 {
+    //   transform: rotate(#{$i * 360 / $n - 8}deg)
+    //     translate(#{-94 + $i}px, #{46 - $i}px);
+    // }
+    &:hover ~ .middle {
+      transform: scale(0.46) translateZ(10px) rotate(#{$i * 360 / $n - 80}deg);
+    }
+    &:hover span {
+      .img1 {
+        display: none;
+      }
+      .img2 {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.pie1 .span2 {
+  transform: rotate(32deg) translate(-83px, 34px);
+  img {
+    transform: scale(0.5) rotate(-33deg);
+  }
+}
+
+.pie2 .span2 {
+  transform: rotate(72deg) translate(-84px, 29px);
+  img {
+    transform: scale(0.6) rotate(-70deg);
+  }
+}
+.pie3 .span2 {
+  transform: rotate(112deg) translate(-92px, 24px);
+  img {
+    transform: scale(0.46) rotate(-113deg);
+  }
+}
+
+.pie4 .span2 {
+  transform: rotate(152deg) translate(-99px, 27px);
+  img {
+    transform: scale(0.46) rotate(-151deg);
+  }
+}
+
+.pie5 .span2 {
+  transform: rotate(192deg) translate(-103px, 31px);
+  img {
+    transform: scale(0.46) rotate(-192deg);
+  }
+}
+
+.pie6 .span2 {
+  transform: rotate(232deg) translate(-105px, 38px);
+  img {
+    transform: scale(0.46) rotate(130deg);
+  }
+}
+
+.pie7 .span2 {
+  transform: rotate(272deg) translate(-100px, 45px);
+  img {
+    transform: scale(0.46) rotate(-90deg);
+  }
+}
+
+.pie8 .span2 {
+  transform: rotate(312deg) translate(-94px, 48px);
+  img {
+    transform: scale(0.46) rotate(49deg);
+  }
+}
+
+.pie9 .span2 {
+  transform: rotate(352deg) translate(-83px, 46px);
+  img {
+    transform: scale(0.46) rotate(10deg);
+  }
+}
+
+.pie1:hover ~ .middle {
+  transform: scale(0.46) translateZ(10px) rotate(319deg);
+}
+
+.selected {
+  cursor: pointer;
+  background: #f34705;
+  z-index: 999;
+  box-shadow: -8px -8px 10px 17px rgba(37, 27, 45, 0.3);
+  .img1 {
+    display: none;
+  }
+  .img2 {
+    display: inline-block !important;
+  }
+  & ~ .middle::after {
+    opacity: 1;
+  }
+}

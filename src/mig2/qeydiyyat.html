@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>Olduğu yer üzrə qeydiyyat</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="qeydiyyat">
+    <div class="hero" id="up">
+      <div class="wrapper">
+        <nav class="sticky">
+          <a href="/"><img src="public/images/logo.png" alt=""/></a>
+
+          <ul class="menu-list">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About us</a></li>
+            <li><a href="events">Events calendar</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="ask">Ask us</a></li>
+          </ul>
+          <img class="menu-icon" src="public/images/menu.png" />
+          <div class="lang">
+            <a href="#"><img src="public/images/az.svg" />Azərbaycan</a>
+            <a href="#"><img src="public/images/gb.svg" />English</a>
+            <a href="#"><img src="public/images/ru.svg" />Русский</a>
+          </div>
+        </nav>
+        <h1>Olduğu yer üzrə qeydiyyat</h1>
+      </div>
+    </div>
+    <menu>
+      <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Visa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link activeLink" href="qeydiyyat.html"
+                  >Olduğu yer üzrə qeydiyyat</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="olma.html">Müvəqqəti olma </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="yasama.html">Müvəqqəti yaşama </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="daimi.html">Daimi yaşama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="emek.html">Əmək fəaliyyəti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vetendasliq.html">Vətəndaşlıq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="siginacaq.html">Sığınacaq</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </menu>
+
+    <section>
+      <div class="wrapper">
+        <div class="qeyd clearfix">
+          <div class="qeyd-item">
+            <div class="out" data-toggle="modal" data-target="#qeydModal1">
+              <div class="in">
+                <div class="in-img"></div>
+                <div class="in-text">
+                  Viza<br />
+                  əldə et
+                </div>
+                <div class="num"><span>1</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="qeyd-item">
+            <div class="out" data-toggle="modal" data-target="#qeydModal2">
+              <div class="in in2">
+                <div class="in-img"></div>
+                <div class="in-text">
+                  Azərbaycana<br />
+                  səfər et
+                </div>
+                <div class="num"><span>2</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="qeyd-item">
+            <div class="out" data-toggle="modal" data-target="#qeydModal3">
+              <div class="in in3">
+                <div class="in-img"></div>
+                <div class="in-text">Zəruri<br />sənədləri<br />topla</div>
+                <div class="num"><span>3</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="qeyd-item">
+            <div class="out" data-toggle="modal" data-target="#qeydModal4">
+              <div class="in in4">
+                <div class="in-img"></div>
+                <div class="in-text">
+                  Qeydiyyat<br />
+                  üçün<br />
+                  müraciət et
+                </div>
+                <div class="num"><span>4</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="qeyd-item">
+            <div class="out" data-toggle="modal" data-target="#qeydModal5">
+              <div class="in in5">
+                <div class="in-img"></div>
+                <div class="in-text">
+                  Ölkədə<br />
+                  olma müddətindən<br />
+                  zövq al
+                </div>
+                <div class="num"><span>5</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="qeydModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog  modal-dialog-centered  modal-xl"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-text">
+              <h5 class="modal-title">Visa əldə et</h5>
+              <div class="modal-desc">
+                <ul class="qeyd-modal1">
+                  <li><a href="">Visa tələb olunmayan ölkələr</a></li>
+                  <li><a href="">Hava limanında visa</a></li>
+                  <li><a href="">ASAN visa</a></li>
+                  <li><a href="">Diplomatik nümayəndəliklər</a></li>
+                </ul>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="qeydModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog  modal-dialog-centered  modal-xl"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-text">
+              <h5 class="modal-title">Azərbaycana səfər et</h5>
+              <div class="modal-desc">
+                Azərbaycan Respublikasında 15 gündən artıq müvəqqəti qalmaq
+                istəyən əcnəbilər və ya vətəndaşlığı olmayan şəxslər olduğu yer
+                üzrə qeydiyyata alınmalıdırlar. Əks təqdirdə onlara inzibati
+                cərimə tətbiq ediləcəkdir.
+              </div>
+            </div>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="qeydModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog  modal-dialog-centered  modal-xl"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-text">
+              <h5 class="modal-title">Sənədlərini topla</h5>
+              <div class="modal-desc">
+                Ərizə-anket Əcnəbinin pasportunun (digər sərhədkeçmə sənədinin)
+                surəti (viza səhifəsi və ölkəyə son giriş tarixini göstərən
+                səhifələr daxil olmaqla) Dövlət rüsumu tələb olunmur!
+              </div>
+            </div>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="qeydModal4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog  modal-dialog-centered  modal-xl"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-text">
+              <h5 class="modal-title">Qeydiyyat üçün müraciət et</h5>
+              <div class="modal-desc">
+                Dövlət Miqrasiya Xidmətinin elektron xidmətləri vasitəsilə
+                qeydiyyat@migration.gov.az elektron ünvanı vasitəsilə ASAN
+                xidmət mərkəzləri vasitəsilə MigAz mobil tətbiqi vasitəsilə
+              </div>
+            </div>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="qeydModal5"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog  modal-dialog-centered  modal-xl"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-text">
+              <h5 class="modal-title">Ölkədə olma müddətindən zövq al</h5>
+              <div class="modal-desc">
+                Viza əsasında – vizanın etibarlılıq müddətinədək; Vizasız
+                rejimdə - 90 gün müddətinədək.
+              </div>
+            </div>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="position: relative; z-index: -6;" />
+    <footer>
+      <div class="wrapper">
+        <div style="margin-bottom: 20px;">
+          <img src="public/images/miglogo.jpg" alt="" />
+          <img src="public/images/eulogo.jpg" alt="" />
+          <img src="public/images/icmpd.jpg" alt="" />
+          <img src="public/images/mobilaze.jpg" alt="" />
+        </div>
+        This website has been produced in the framework of “Support to the
+        Implementation of the Mobility Partnership with Azerbaijan” (MOBILAZE)
+        project funded by the European Union and implemented by the
+        International Centre for Migration Policy Development (ICMPD). The views
+        expressed on this website do not necessarily reflect the views of the
+        European Union and ICMPD;
+        <hr style="border-top: 2px solid#ccc; margin: 20px 0" />
+
+        <div class="copy">
+          <span>© All rights reserved 2019</span>
+
+          <div>
+            <p>
+              <a href="#"><img src="public/images/youtube.png" alt=""/></a>
+              <a href="#"><img src="public/images/twitter.png" alt=""/></a>
+              <a href="#"><img src="public/images/instagram.png" alt=""/></a>
+              <a href="#"><img src="public/images/facebook.png" alt=""/></a>
+            </p>
+            <p>
+              <a href="#"><img src="public/images/app-store.png" alt=""/></a>
+              <a href="#"><img src="public/images/playmarket1.png" alt=""/></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#up" class="up"> <img src="public/images/up.png" alt=""/></a>
+    </footer>
+  </body>
+</html>
