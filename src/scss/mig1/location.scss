@@ -1,6 +1,6 @@
 .location {
   .hero {
-    background: url(../../public/images/mig1/locationbg.jpg) center / cover;
+    background: url(../public/images/mig1/locationbg.jpg) center / cover;
   }
 
   .location-slider-wrapper {
@@ -55,12 +55,12 @@
     left: 0;
     height: 630px;
     width: 100%;
-    background: url(../../public/images/mig1/bg-clip.svg) center / cover;
+    background: url(../public/images/mig1/bg-clip.svg) center / cover;
     pointer-events: none;
     z-index: 9;
   }
   .clip2 {
-    background: url(../../public/images/mig1/bg-clip2.svg) center / cover;
+    background: url(../public/images/mig1/bg-clip2.svg) center / cover;
     transform: scaleX(-1);
   }
 
@@ -75,13 +75,13 @@
     .location-slide {
       height: 630px;
       &.ls1 {
-        background: url(../../public/images/mig1/ls1.jpg) right center / cover;
+        background: url(../public/images/mig1/ls1.jpg) right center / cover;
       }
       &.ls2 {
-        background: url(../../public/images/mig1/ls2.jpg) center / cover;
+        background: url(../public/images/mig1/ls2.jpg) center / cover;
       }
       &.ls3 {
-        background: url(../../public/images/mig1/ls3.jpg) center / cover;
+        background: url(../public/images/mig1/ls3.jpg) center / cover;
       }
     }
   }
@@ -127,13 +127,13 @@
   .second-slide {
     margin: 20px 0 100px 0;
     .ls1 {
-      background: url(../../public/images/mig1/ls4.jpg) center / cover !important;
+      background: url(../public/images/mig1/ls4.jpg) center / cover !important;
     }
     .ls2 {
-      background: url(../../public/images/mig1/ls2.jpg) center / cover !important;
+      background: url(../public/images/mig1/ls2.jpg) center / cover !important;
     }
     .ls3 {
-      background: url(../../public/images/mig1/ls3.jpg) center / cover !important;
+      background: url(../public/images/mig1/ls3.jpg) center / cover !important;
     }
     .location-text-slider {
       width: 100%;

@@ -3,7 +3,7 @@
   position: relative;
   padding: 0 !important;
   .hero {
-    background-image: url(../../public/images/mig2/visabg.jpg);
+    background-image: url(../public/images/mig2/visabg.jpg);
   }
 
   &::after {
@@ -188,7 +188,7 @@
       top: 0;
       left: 0;
       z-index: 0;
-      background: url(../../public/images/mig2/visa1.jpg) center / cover;
+      background: url(../public/images/mig2/visa1.jpg) center / cover;
     }
     &:nth-child(2n) {
       &::before {
@@ -198,43 +198,43 @@
 
     &:nth-child(2) {
       &::after {
-        background: url(../../public/images/mig2/visa2.jpg) center / cover;
+        background: url(../public/images/mig2/visa2.jpg) center / cover;
       }
     }
 
     &:nth-child(3) {
       &::after {
-        background: url(../../public/images/mig2/visa3.jpg) center / cover;
+        background: url(../public/images/mig2/visa3.jpg) center / cover;
       }
     }
 
     &:nth-child(4) {
       &::after {
-        background: url(../../public/images/mig2/visa4.jpg) center / cover;
+        background: url(../public/images/mig2/visa4.jpg) center / cover;
       }
     }
 
     &:nth-child(5) {
       &::after {
-        background: url(../../public/images/mig2/visa5.jpg) center / cover;
+        background: url(../public/images/mig2/visa5.jpg) center / cover;
       }
     }
 
     &:nth-child(6) {
       &::after {
-        background: url(../../public/images/mig2/visa6.jpg) center / cover;
+        background: url(../public/images/mig2/visa6.jpg) center / cover;
       }
     }
 
     &:nth-child(7) {
       &::after {
-        background: url(../../public/images/mig2/visa7.jpg) center / cover;
+        background: url(../public/images/mig2/visa7.jpg) center / cover;
       }
     }
 
     &:nth-child(8) {
       &::after {
-        background: url(../../public/images/mig2/visa8.jpg) center / cover;
+        background: url(../public/images/mig2/visa8.jpg) center / cover;
       }
     }
 

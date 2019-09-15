@@ -1,7 +1,7 @@
 .places {
   padding-right: 0 !important;
   .hero {
-    background: url(../../public/images/mig1/placesbg.jpg) center / cover;
+    background: url(../public/images/mig1/placesbg.jpg) center / cover;
   }
   .modal {
     padding-right: 2px !important;
@@ -144,7 +144,7 @@
         }
         &::before {
           content: " ";
-          background: url(../../public/images/mig1/info.png) center / contain
+          background: url(../public/images/mig1/info.png) center / contain
             no-repeat;
           width: 30px;
           height: 20px;

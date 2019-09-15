@@ -2,8 +2,7 @@
   position: relative;
   padding: 0 !important;
   .hero {
-    background: url(../../public/images/mig2/qeydbg.jpg) center top / cover
-      fixed;
+    background: url(../public/images/mig2/qeydbg.jpg) center top / cover fixed;
   }
   &::after {
     content: " ";
@@ -162,7 +161,7 @@
     top: 0;
     left: 0;
     z-index: 99;
-    // background: url(../../public/images/mig2/qeyd1.jpg) center / cover;
+    // background: url(../public/images/mig2/qeyd1.jpg) center / cover;
     margin-top: 7%;
     border-right: 4px solid #fff;
     border-top: 4px solid #fff;
@@ -196,20 +195,20 @@
     left: 0;
     z-index: -2;
     transition: all 0.3s;
-    background: url(../../public/images/mig2/qeyd1.jpg) center / cover;
+    background: url(../public/images/mig2/qeyd1.jpg) center / cover;
     transform: rotate(-45deg) scale(1.5);
   }
   .in2 .in-img {
-    background: url(../../public/images/mig2/qeyd2.jpg) center / cover;
+    background: url(../public/images/mig2/qeyd2.jpg) center / cover;
   }
   .in3 .in-img {
-    background: url(../../public/images/mig2/qeyd3.jpg) center / cover;
+    background: url(../public/images/mig2/qeyd3.jpg) center / cover;
   }
   .in4 .in-img {
-    background: url(../../public/images/mig2/qeyd4.jpg) center / cover;
+    background: url(../public/images/mig2/qeyd4.jpg) center / cover;
   }
   .in5 .in-img {
-    background: url(../../public/images/mig2/qeyd5.jpg) center / cover;
+    background: url(../public/images/mig2/qeyd5.jpg) center / cover;
   }
   .in-text {
     color: #fff;

@@ -4,7 +4,7 @@ $half: $size - $size/4.8;
 
 .daimi {
   .hero {
-    background: url(../../public/images/mig2/daimibg.jpg) center / cover fixed;
+    background: url(../public/images/mig2/daimibg.jpg) center / cover fixed;
   }
   .center {
     text-align: center;
@@ -146,7 +146,7 @@ $half: $size - $size/4.8;
     border-radius: 50%;
     box-sizing: border-box;
     padding: 80px;
-    background: url(../../public/images/mig2/orta.jpg) center / cover;
+    background: url(../public/images/mig2/orta.jpg) center / cover;
     background-clip: content-box;
     pointer-events: none;
     z-index: 9999;

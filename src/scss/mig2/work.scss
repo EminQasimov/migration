@@ -1,7 +1,7 @@
 .work {
   padding: 0 !important;
   .hero {
-    background-image: url(../../public/images/mig2/workbg.jpg) !important;
+    background-image: url(../public/images/mig2/workbg.jpg) !important;
   }
   .mid {
     width: 90%;
@@ -248,7 +248,7 @@
       height: 100%;
       border-radius: 60px 100px 100px 60px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      background: #fff url(../../public/images/mig2/work1.jpg) center / cover;
+      background: #fff url(../public/images/mig2/work1.jpg) center / cover;
       position: relative;
       z-index: 2;
       pointer-events: auto;
@@ -268,22 +268,22 @@
       }
     }
     .bg1 {
-      background: #fff url(../../public/images/mig2/work1.jpg) center / cover;
+      background: #fff url(../public/images/mig2/work1.jpg) center / cover;
     }
     .bg2 {
-      background: #fff url(../../public/images/mig2/work2.jpg) center / cover;
+      background: #fff url(../public/images/mig2/work2.jpg) center / cover;
     }
     .bg3 {
-      background: #fff url(../../public/images/mig2/work3.jpg) center / cover;
+      background: #fff url(../public/images/mig2/work3.jpg) center / cover;
     }
     .bg4 {
-      background: #fff url(../../public/images/mig2/work4.jpg) center / cover;
+      background: #fff url(../public/images/mig2/work4.jpg) center / cover;
     }
     .bg5 {
-      background: #fff url(../../public/images/mig2/work5.jpg) center / cover;
+      background: #fff url(../public/images/mig2/work5.jpg) center / cover;
     }
     .bg6 {
-      background: #fff url(../../public/images/mig2/work6.jpg) center / cover;
+      background: #fff url(../public/images/mig2/work6.jpg) center / cover;
     }
 
     .circle {
@@ -328,7 +328,7 @@
   }
   .wi1 {
     &::after {
-      background: #dfd7d7 url(../../public/images/mig2/work1.jpg) center / cover;
+      background: #dfd7d7 url(../public/images/mig2/work1.jpg) center / cover;
     }
   }
 }

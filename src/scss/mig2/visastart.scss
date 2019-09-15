@@ -3,7 +3,7 @@
   position: relative;
   padding: 0 !important;
   .hero {
-    background-image: url(../../public/images/mig2/visabg.jpg);
+    background-image: url(../public/images/mig2/visabg.jpg);
   }
   &::after {
     content: " ";
@@ -77,7 +77,7 @@
     &:hover span {
       background: #fe4601;
       &::after {
-        background: #fe4601 url(../../public/images/mig2/visa-index1-icon.png)
+        background: #fe4601 url(../public/images/mig2/visa-index1-icon.png)
           center / 40px auto no-repeat;
       }
     }
@@ -96,15 +96,14 @@
         height: 100px;
         transform: rotate(-45deg);
         transition: all 0.3s;
-        background: #7519b0 url(../../public/images/mig2/visa-index1-icon.png)
+        background: #7519b0 url(../public/images/mig2/visa-index1-icon.png)
           center / 40px auto no-repeat;
       }
     }
   }
   .index-img {
     height: 250px;
-    background: #fff url(../../public/images/mig2/visa-index1.jpg) center /
-      cover;
+    background: #fff url(../public/images/mig2/visa-index1.jpg) center / cover;
   }
   h2 {
     text-transform: uppercase;
@@ -115,19 +114,18 @@
   }
   .right-item {
     .index-img {
-      background: #fff url(../../public/images/mig2/visa-index2.jpg) center /
-        cover;
+      background: #fff url(../public/images/mig2/visa-index2.jpg) center / cover;
     }
     &:hover span {
       background: #fe4601;
       &::after {
-        background: #fe4601 url(../../public/images/mig2/visa-index2-icon.png)
+        background: #fe4601 url(../public/images/mig2/visa-index2-icon.png)
           center / 40px auto no-repeat;
       }
     }
     span {
       &::after {
-        background: #7519b0 url(../../public/images/mig2/visa-index2-icon.png)
+        background: #7519b0 url(../public/images/mig2/visa-index2-icon.png)
           center / 40px auto no-repeat;
       }
     }

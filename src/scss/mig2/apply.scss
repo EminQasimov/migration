@@ -3,7 +3,7 @@
   position: relative;
   padding: 0 !important;
   .hero {
-    background-image: url(../../public/images/mig2/visabg.jpg);
+    background-image: url(../public/images/mig2/visabg.jpg);
   }
   .apply-wrap {
     width: 90%;
@@ -30,16 +30,16 @@
     }
     display: inline-block;
     &:nth-child(1) > div {
-      background: #fff url(../../public/images/mig2/apply1.jpg) center / cover;
+      background: #fff url(../public/images/mig2/apply1.jpg) center / cover;
     }
     &:nth-child(2) > div {
-      background: #fff url(../../public/images/mig2/apply2.jpg) center / cover;
+      background: #fff url(../public/images/mig2/apply2.jpg) center / cover;
     }
     &:nth-child(3) > div {
-      background: #fff url(../../public/images/mig2/apply3.jpg) center / cover;
+      background: #fff url(../public/images/mig2/apply3.jpg) center / cover;
     }
     &:nth-child(4) > div {
-      background: #fff url(../../public/images/mig2/apply4.jpg) center / cover;
+      background: #fff url(../public/images/mig2/apply4.jpg) center / cover;
     }
   }
   .apply-img {

@@ -6,10 +6,13 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const PreloadWebpackPlugin = require("preload-webpack-plugin")
-const CssUrlRelativePlugin = require("css-url-relative-plugin")
+// const CssUrlRelativePlugin = require("css-url-relative-plugin")
+
 const glob = require("glob")
 
 const IS_DEV = process.env.NODE_ENV === "dev"
+
+
 
 const config = {
   mode: IS_DEV ? "development" : "production",
@@ -55,7 +58,7 @@ const config = {
             }
           },
           {
-            loader: "css-loader"
+            loader: "css-loader?url=false"
           },
           {
             loader: "postcss-loader",
@@ -76,23 +79,24 @@ const config = {
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
-          {
-            loader: "file-loader",
+           {
+            loader: "url-loader",
             options: {
+              limit: 8192,
               name: "[name].[ext]",
-              outputPath: "public/images",
-              publicPath: "public/images",
+              fallback: "file-loader",
+              outputPath: "public/images/[folder]"
             }
           },
           // {
-          //   loader: "url-loader",
+          //   loader: "file-loader",
           //   options: {
-          //     limit: 8192,
           //     name: "[name].[ext]",
-          //     fallback: "file-loader",
-          //     outputPath: "public/images"
+          //     outputPath: "public/images",
+          //     // publicPath: "public/images",
           //   }
           // },
+         
           // {
           //   loader: "image-webpack-loader",
           //   options: {
@@ -111,7 +115,8 @@ const config = {
           //       quality: 75
           //     }
           //   }
-          // }
+          // },
+          
         ]
       }
     ]
@@ -137,10 +142,11 @@ const config = {
     new PreloadWebpackPlugin({
       include: "initial"
     }),
-    new CssUrlRelativePlugin(),
+    // new CssUrlRelativePlugin(),
     new webpack.optimize.LimitChunkCountPlugin({
       maxChunks: 1 // disable creating additional chunks
-    })
+    }),
+   
   ],
 
   devServer: {

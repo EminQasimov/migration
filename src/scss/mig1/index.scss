@@ -45,7 +45,7 @@
   width: 100%;
   height: 53px;
   position: relative;
-  background: url(../../public/images/mig1/welcome1.png) center / 314px 188px
+  background: url(../public/images/mig1/welcome1.png) center / 314px 188px
     no-repeat;
   font-size: 17px;
   color: #fff;
@@ -127,8 +127,7 @@
       position: relative;
       width: 300px;
       height: 300px;
-      background: url(../../public/images/mig1/dance.jpg) center / 400px
-        no-repeat;
+      background: url(../public/images/mig1/dance.jpg) center / 400px no-repeat;
       // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       box-shadow: -15px 5px 36px rgba(0, 0, 0, 0.1);
 

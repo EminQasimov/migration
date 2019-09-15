@@ -2,8 +2,7 @@
   position: relative;
   padding: 0 !important;
   .hero {
-    background: url(../../public/images/mig2/olmabg.jpg) center top / cover
-      fixed;
+    background: url(../public/images/mig2/olmabg.jpg) center top / cover fixed;
   }
 
   &::after {
@@ -186,21 +185,21 @@
 
       &:nth-child(1) .pointer {
         z-index: 9;
-        background: url(../../public/images/mig2/olma1.jpg) center / 100% 100%;
+        background: url(../public/images/mig2/olma1.jpg) center / 100% 100%;
       }
       &:nth-child(2) .pointer {
         z-index: 8;
-        background: url(../../public/images/mig2/olma2.jpg) center / 100% 100%;
+        background: url(../public/images/mig2/olma2.jpg) center / 100% 100%;
       }
       &:nth-child(3) .pointer {
         z-index: 7;
-        background: url(../../public/images/mig2/olma3.jpg) center / 100% 100%;
+        background: url(../public/images/mig2/olma3.jpg) center / 100% 100%;
         h2 {
           font-size: 15px;
         }
       }
       &:nth-child(4) .pointer {
-        background: url(../../public/images/mig2/olma4.jpg) center / 100% 100%;
+        background: url(../public/images/mig2/olma4.jpg) center / 100% 100%;
         z-index: 6;
 
         h2 {
@@ -211,15 +210,15 @@
         }
       }
       &:nth-child(5) .pointer {
-        background: url(../../public/images/mig2/olma5.jpg) center / 100% 100%;
+        background: url(../public/images/mig2/olma5.jpg) center / 100% 100%;
         z-index: 4;
       }
       &:nth-child(6) .pointer {
-        background: url(../../public/images/mig2/olma6.jpg) center / 100% 100%;
+        background: url(../public/images/mig2/olma6.jpg) center / 100% 100%;
         z-index: 3;
       }
       &:nth-child(7) .pointer {
-        background: url(../../public/images/mig2/olma7.jpg) center / 100% 100%;
+        background: url(../public/images/mig2/olma7.jpg) center / 100% 100%;
         z-index: 2;
       }
     }

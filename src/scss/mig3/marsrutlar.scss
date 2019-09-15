@@ -1,5 +1,171 @@
-.marsrutlar {
+.rut {
   .hero {
-    background: url(../../public/images/mig3/marsrutlarbg.jpg) center / cover;
+    background: url(../public/images/mig3/marsrutlarbg.jpg) center / cover;
+  }
+
+  .rut-left {
+    margin-top: 50px;
+    min-height: 424px;
+    h2 {
+      color: #f24704;
+      font-size: 28px;
+      font-weight: 700;
+      margin: 20px auto;
+    }
+    p {
+      font-size: 19px;
+      text-align: justify;
+      color: #555;
+    }
+  }
+
+  .rut-right {
+    margin-top: 50px;
+    min-height: 424px;
+
+    h2 {
+      color: #f24704;
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    hr {
+      background: #888;
+      margin: 10px auto;
+    }
+
+    h3 {
+      color: #7519b0;
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: 260px;
+    }
+  }
+
+  .rut-center {
+    text-align: center;
+    color: #f24704;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 40px auto;
+  }
+
+  .rut-item {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    background: #7519b0;
+    overflow: hidden;
+    margin: 20px auto;
+
+    @media (max-width: 1100px) {
+      height: auto;
+      display: block;
+      h5 {
+        height: 100px !important;
+        width: 100%;
+        margin: 0;
+      }
+      .rut-skew {
+        height: 100px !important;
+        width: calc(100% / 3 - 100px);
+        float: left;
+        margin-left: 50px;
+        margin-top: -4px;
+      }
+    }
+    @media (max-width: 728px) {
+      .rut-skew {
+        width: 100% !important;
+        transform: none;
+        margin: 0;
+        border: none;
+        border-bottom: 2px solid #fff;
+        span {
+          transform: none;
+        }
+      }
+    }
+
+    h5 {
+      padding: 20px;
+      flex: 1;
+      display: inline-block;
+      color: #fff;
+      font-weight: 700;
+      background: url(../public/images/mig3/rut2.jpg) left / cover;
+      height: 110%;
+      margin-right: -40px;
+      position: relative;
+      @media (max-width: 1170px) {
+        font-size: 16px;
+      }
+      span {
+        position: absolute;
+        top: 4px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        z-index: 1;
+      }
+      &::after {
+        content: " ";
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: rgba(118, 25, 176, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .rut-skew {
+    background: #7519b0;
+    transform: skewX(-35deg);
+    border-left: 4px solid #fff;
+    border-top: none;
+    border-bottom: none;
+    height: 100%;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:last-child {
+      width: 220px;
+    }
+    span {
+      display: inline-block;
+      transform: skewX(35deg);
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      @media (max-width: 1170px) {
+        font-size: 16px;
+        width: 150px;
+        &:last-child {
+          width: 170px;
+        }
+      }
+    }
+  }
+  .rut2 h5 {
+    background-image: url(../public/images/mig3/rut3.jpg);
+  }
+  .rut3 h5 {
+    background-image: url(../public/images/mig3/rut4.jpg);
+  }
+  .rut4 h5 {
+    background-image: url(../public/images/mig3/rut5.jpg);
   }
 }

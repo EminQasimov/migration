@@ -2,7 +2,7 @@
   position: relative;
   padding: 0 !important;
   .hero {
-    background: url(../../public/images/mig2/vetendasliqbg.jpg) center / cover;
+    background: url(../public/images/mig2/vetendasliqbg.jpg) center / cover;
   }
   &::after {
     content: " ";
@@ -169,13 +169,13 @@
     }
   }
   .v1 .wrapit::before {
-    background: url(../../public/images/mig2/veten1.jpg) center / cover;
+    background: url(../public/images/mig2/veten1.jpg) center / cover;
   }
   .v2 .wrapit::before {
-    background: url(../../public/images/mig2/veten2.jpg) center / cover;
+    background: url(../public/images/mig2/veten2.jpg) center / cover;
   }
   .v3 .wrapit::before {
-    background: url(../../public/images/mig2/veten3.jpg) center / cover;
+    background: url(../public/images/mig2/veten3.jpg) center / cover;
   }
   .veten-content {
     margin: 70px 10px;

@@ -2,7 +2,7 @@
   position: relative;
   padding: 0 !important;
   .hero {
-    background-image: url(../../public/images/mig2/visabg.jpg);
+    background-image: url(../public/images/mig2/visabg.jpg);
   }
   &::after {
     content: " ";
@@ -119,13 +119,12 @@
   }
   .index-img {
     height: 200px;
-    background: #fff url(../../public/images/mig2/visanovleri1.jpg) center /
-      cover;
+    background: #fff url(../public/images/mig2/visanovleri1.jpg) center / cover;
   }
 
   .right-item {
     .index-img {
-      background: #fff url(../../public/images/mig2/visanovleri2.jpg) center /
+      background: #fff url(../public/images/mig2/visanovleri2.jpg) center /
         cover;
     }
   }
