@@ -14,6 +14,9 @@ import "./transportation"
 // mig2 section start from here
 import '../mig2/visastart.js'
 
+// mig3 section start from here
+import "../mig3/niye.js"
+
 import WOW from "wow.js"
 
 var wow = new WOW({ offset: 0 })
