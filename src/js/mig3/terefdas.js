@@ -1,0 +1,1 @@
+import '../../scss/mig3/terefdas.scss';

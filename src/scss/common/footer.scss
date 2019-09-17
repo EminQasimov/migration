@@ -29,12 +29,13 @@
 
 footer {
   position: relative;
+  text-align: left;
   .wrapper {
     padding: 30px 100px;
-   
+
     @media (max-width: 768px) {
       padding: 30px 20px;
-      & > div > img{
+      & > div > img {
         width: 50%;
         float: left;
         transform: scale(0.7);

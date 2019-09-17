@@ -1,0 +1,43 @@
+.ugur {
+  .hero {
+    background: url(../public/images/mig3/ugur.jpg) center / contain no-repeat;
+    @media (max-width: 900px) {
+      background-size: cover;
+    }
+  }
+  .ugur-flex {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 90px !important;
+    @media (max-width: 900px) {
+      display: block;
+      span {
+        height: 400px;
+        width: 100% !important;
+      }
+    }
+    span {
+      width: 300px;
+      display: block;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    div {
+      flex: 1;
+    }
+    h2 {
+      font-size: 26px;
+      color: #fe4601;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: justify;
+      font-size: 20px;
+      color: #555;
+    }
+  }
+}

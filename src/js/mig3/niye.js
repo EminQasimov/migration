@@ -1,5 +1,9 @@
 import '../../scss/mig3/niye.scss';
 
-import './marsrutlar';
+import './sabitlik';
 import './iqtisadiyyat';
+import './terefdas';
+import './marsrutlar';
+import './ugur';
 
+import './biznes'
