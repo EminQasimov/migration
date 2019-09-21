@@ -14,4 +14,7 @@ import './biznes';
 import './investisiya';
 
 //
-import './biznesyollari'
+import './biznesyollari';
+
+//
+import './sahibkarlar';

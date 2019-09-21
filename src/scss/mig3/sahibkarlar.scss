@@ -1,0 +1,314 @@
+.sahibkar {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0 !important;
+  .hero {
+    background: url(../public/images/mig3/sahibbg.jpg) center / cover;
+  }
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 25%;
+    left: -37%;
+    z-index: -11;
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(45deg);
+    background: rgb(241, 232, 247);
+    @media (max-width: 1350px) {
+      left: -47%;
+    }
+    @media (max-width: 1063px) {
+      display: none;
+    }
+  }
+
+  .top-wrap {
+    background: #e3d1ef;
+  }
+
+  .sahib-top {
+    display: flex;
+    background: #e3d1ef;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1300px;
+  }
+
+  .sahib-item {
+    width: 200px;
+    height: 200px;
+    background: #7519b0;
+    margin: 80px 30px;
+
+    div {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #7519b0;
+      transform: rotate(45deg);
+      overflow: hidden;
+      cursor: pointer;
+      &:hover::before {
+        transform: scale(1.2) rotate(-45deg);
+      }
+
+      h5 {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-45deg);
+
+        p {
+          font-size: 24px;
+          color: #fff;
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+
+      &:after {
+        background: rgba(118, 25, 176, 0.452);
+        content: " ";
+        display: block;
+        width: 170%;
+        height: 170%;
+        position: absolute;
+        left: -60px;
+        top: -100px;
+        z-index: -2;
+        transform: rotate(-45deg);
+      }
+
+      &:before {
+        content: " ";
+        display: block;
+        width: 170%;
+        height: 170%;
+        position: absolute;
+        left: -60px;
+        top: -100px;
+        z-index: -2;
+        transform: rotate(-45deg);
+        transition: all 0.3s;
+      }
+    }
+    &:nth-child(1) div::before {
+      background: url(../public/images/mig3/sahibtop1.jpg) center/cover;
+    }
+    &:nth-child(2) div::before {
+      background: url(../public/images/mig3/sahibtop2.jpg) center/cover;
+    }
+    &:nth-child(3) div::before {
+      background: url(../public/images/mig3/sahibtop3.jpg) center/cover;
+    }
+    &:nth-child(4) div::before {
+      background: url(../public/images/mig3/sahibtop4.jpg) center/cover;
+    }
+  } // item
+
+  $white: #fff;
+  @mixin mq($width: 0) {
+    @media (min-width: + $width) {
+      @content;
+    }
+  }
+
+  @mixin hex-size($height, $grid_width, $margin, $gutter, $translate) {
+    width: $grid_width;
+    margin: #{$margin};
+
+    &.-gutter {
+      margin: #{$gutter};
+    }
+
+    .-hex-wrap {
+      height: $height/2;
+    }
+    .-card {
+      background-size: auto $height;
+      height: $height/2;
+      width: $grid_width;
+    }
+    .-clip {
+      &:before {
+        height: $height;
+        width: $height;
+      }
+      &.-left {
+        &:before {
+          transform: rotate(-60deg) translate(-$height/2, 0);
+        }
+      }
+      &.-right {
+        &:before {
+          transform: rotate(60deg) translate(#{$translate});
+        }
+      }
+    }
+  }
+
+  @mixin hex-small() {
+    $height: 300px;
+    $width: $height;
+    $grid_width: 260px;
+
+    @include hex-size(220px, 190px, "27px 10px 40px 10px", "33px", "40px,40px");
+  }
+  @mixin hex-medium() {
+    $height: 300px;
+    $width: $height;
+    $grid_width: 260px;
+
+    @include hex-size(300px, 260px, "37px 10px 50px 10px", "47px", "55px,55px");
+  }
+  @mixin hex-large() {
+    $height: 380px;
+    $width: $height;
+    $grid_width: 330px;
+
+    @include hex-size(380px, 330px, "48px 10px 60px 10px", "57px", "70px,69px");
+  }
+
+  .hex-container {
+    position: relative;
+    margin: 100px auto;
+  }
+  .hex-grid {
+    text-align: center;
+    // margin-top: 55px;
+    // margin-bottom: 55px;
+    font-size: 0px;
+    word-spacing: 0;
+
+    a.-hex,
+    div.-hex {
+      // width: $grid_width;
+      // margin: 37px 0 38px 0;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      z-index: 10;
+      perspective: 800px;
+
+      @include hex-small();
+
+      @include mq(900px) {
+        @include hex-medium();
+      }
+      @include mq(1080px) {
+        @include hex-large();
+      }
+
+      // &.-gutter{
+      // 	margin: 57px 10px 57px;
+      // }
+
+      .-hex-wrap {
+        position: relative;
+        // height: $height/2;
+        width: 100%;
+        transition: all 400ms ease-out;
+        transform-style: preserve-3d;
+        transform: rotateY(180deg);
+      }
+      .-card {
+        // background-size: auto $height;
+        // height: $height/2;
+        transition: none 1s;
+        // background-color: purple;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        display: block;
+        // width: $grid_width;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        backface-visibility: hidden;
+
+        &.-front {
+          // background-image: url(../img/test-bio.jpg);
+          z-index: 10;
+        }
+        &.-back {
+          background-image: url("");
+          transform: rotateY(-180deg);
+          z-index: 9;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .-inner {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 0 auto;
+        position: absolute;
+        // bottom: 0;
+        z-index: 5;
+        h3,
+        p {
+          display: block;
+          color: $white;
+        }
+        p {
+          margin: 0;
+          font-weight: 300;
+        }
+      }
+      .-clip {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        background: inherit;
+        backface-visibility: hidden;
+
+        &:before {
+          // height: $height;
+          // width: $width;
+          content: "";
+          position: absolute;
+          left: 0;
+          background: inherit;
+        }
+
+        &.-left {
+          z-index: -1;
+          transform: rotate(60deg);
+
+          &:before {
+            // @include transform(rotate(-60deg) translate(-$height/2,0));
+            transform-origin: 0 0;
+          }
+        }
+        &.-right {
+          z-index: -2;
+          transform: rotate(-60deg);
+
+          &:before {
+            bottom: 0;
+            // @include transform(rotate(60deg) translate(70px,69px));
+            transform-origin: 50% 50%;
+          }
+        }
+      }
+    }
+
+    a.-hex {
+      &:hover {
+        .-hex-wrap {
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+} //end
