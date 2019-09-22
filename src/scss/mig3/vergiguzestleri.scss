@@ -1,0 +1,128 @@
+.vergiguzest {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0 !important;
+  .hero {
+    background: url(../public/images/mig3/vgbg.jpg) center / cover;
+  }
+  .vg-container {
+    max-width: 1300px;
+    margin-bottom: 100px;
+  }
+}
+
+.vg-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  span {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    background: linear-gradient(#8651c4, #f152bf);
+    position: relative;
+
+    &::after {
+      content: " ";
+      display: block;
+      width: 97%;
+      height: 97%;
+      border-radius: 999px;
+      border: 6px solid #fff;
+      background: transparent;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      height: 66px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .vg-round {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: linear-gradient(#8651c4, #f152bf);
+    position: relative;
+    margin: 0px 30px;
+    margin-top: -50px;
+
+    &::after {
+      content: " ";
+      display: block;
+      width: 85%;
+      height: 85%;
+      border-radius: 999px;
+      border: 2px solid #fff;
+      background: transparent;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+    i {
+      height: 60px;
+      width: 3px;
+      background: #bccbda;
+      display: block;
+      margin-left: 16px;
+      margin-top: 60px;
+    }
+    b {
+      height: 3px;
+      width: 40vmax;
+      background: #bccbda;
+      display: block;
+      transform: translate(0px, 57px);
+      &::after {
+        content: " ";
+        display: inline-block;
+        height: 50px;
+        width: 3px;
+        background: #bccbda;
+        transform: translate(40vmax, 0px);
+      }
+    }
+    em {
+      width: 320px;
+      display: block;
+      font-size: 15px;
+      font-style: normal;
+      text-indent: 18px;
+      margin-top: 10px;
+    }
+  }
+  p {
+    flex: 1;
+    font-size: 16px;
+    text-align: justify;
+    margin: 50px auto;
+  }
+
+  //   @media (max-width: 1050px) {
+  //     flex-direction: column;
+  //     align-items: center;
+  //     i {
+  //       display: none !important;
+  //     }
+  //     .vg-round {
+  //       margin-top: -80px !important;
+  //       margin-left: 230px !important;
+  //     }
+  //   }
+} // item end
+
+.vg-item-right {
+  .vg-round i {
+    transform: scaleX(-1);
+  }
+}

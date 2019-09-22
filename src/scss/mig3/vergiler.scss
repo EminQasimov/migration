@@ -1,0 +1,157 @@
+.vergiler {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0 !important;
+  .hero {
+    background: url(../public/images/mig3/vergilerbg.jpg) center / cover;
+  }
+  .modal-desc {
+    p::first-letter {
+      color: #f24704;
+      font-weight: 700;
+    }
+    div {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.vergiler-top {
+  max-width: 1300px;
+  margin: 50px auto;
+  p {
+    font-size: 18px;
+    text-align: justify;
+    b {
+      color: #7519b0;
+      font-weight: 400;
+    }
+  }
+  h5 {
+    color: #7519b0;
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 20px;
+    width: 100%;
+    transition: color 0.3s;
+  }
+  img {
+    height: 200px;
+  }
+}
+
+.vergiler-top-icons > div {
+  flex: 1;
+  margin-top: 30px;
+  cursor: pointer;
+  &:hover h5 {
+    color: #f24704;
+  }
+}
+
+.vergiler-bottom {
+  max-width: 1300px;
+  margin: 50px auto;
+  h4 {
+    color: #f24704;
+    font-weight: 700;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    color: #666;
+  }
+
+  h6:not(.collapsed) {
+    color: #f24704;
+    .vicon {
+      opacity: 0;
+    }
+    .vicono {
+      opacity: 1;
+    }
+  }
+
+  h6 {
+    color: #7519b0;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    // &:hover {
+    //   .vicon {
+    //     opacity: 0;
+    //   }
+    //   .vicono {
+    //     opacity: 1;
+    //   }
+    // }
+    span {
+      display: block;
+      position: relative;
+
+      img.vbg {
+        width: 250px;
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+      }
+      img.vicon,
+      img.vicono {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        transform: scale(0.66);
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+      img.vicono {
+        opacity: 0;
+      }
+    }
+    & > div {
+      margin-left: 20px;
+      position: relative;
+    }
+  }
+  .card-body {
+    font-size: 17px;
+    position: relative;
+    top: -40px;
+    left: 270px;
+    width: calc(100% - 290px);
+    padding: 0;
+    text-align: justify;
+    color: #666;
+  }
+  #headingTwo {
+    img.vicono,
+    img.vicon {
+      top: 10px;
+      left: 46px;
+    }
+  }
+  #headingThree {
+    img.vicono,
+    img.vicon {
+      top: 29px;
+      left: 35px;
+    }
+  }
+  #headingFour {
+    img.vicono,
+    img.vicon {
+      top: 33px;
+      left: 38px;
+    }
+  }
+}
+
+.vergi-desc {
+  font-size: 16px;
+  padding-top: 10px;
+  margin-top: 20px;
+  border-top: 2px solid #e7e6e6;
+  color: #666;
+}

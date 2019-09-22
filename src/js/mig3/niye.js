@@ -18,3 +18,11 @@ import './biznesyollari';
 
 //
 import './sahibkarlar';
+import './vergiguzestleri';
+
+//
+import './vergiler';
+
+//
+
+import './gomruk'
