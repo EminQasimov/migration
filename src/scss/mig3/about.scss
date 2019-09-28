@@ -1,0 +1,43 @@
+.about {
+  position: relative;
+  padding: 0 !important;
+  .hero {
+    background: #000 url(../public/images/mig3/about.png) center / 630px 250px
+      no-repeat;
+  }
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 31%;
+    left: -26%;
+    z-index: -11;
+    width: 600px;
+    height: 600px;
+    transform: rotate(45deg);
+    background: rgb(241, 232, 247);
+    @media (max-width: 1250px) {
+      bottom: 31%;
+    }
+    @media (max-width: 1012px) {
+      left: -38%;
+    }
+    @media (max-width: 777px) {
+      left: -61%;
+      bottom: 37%;
+    }
+    @media (max-width: 550px) {
+      left: -114%;
+    }
+  }
+  p {
+    font-size: 18px;
+    color: #7519b0;
+  }
+  .contact-wrap {
+    max-width: 1400px;
+    margin: 100px auto;
+    min-height: 600px;
+  }
+}

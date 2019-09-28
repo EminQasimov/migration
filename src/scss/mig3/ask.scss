@@ -1,0 +1,80 @@
+.ask {
+  .hero {
+    background: #000 url(../public/images/mig3/ask.jpg) center / cover;
+  }
+  .accordion {
+    max-width: 1300px;
+    margin: 50px auto;
+  }
+
+  h6:not(.collapsed) {
+    color: #f24704;
+    border-color: #f24704;
+    .askicon {
+      opacity: 0 !important;
+    }
+    .askicono {
+      opacity: 1 !important;
+    }
+  }
+
+  h6 {
+    color: #555;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    border-bottom: 2px solid #999;
+
+    span {
+      display: block;
+      width: 80px;
+      height: 80px;
+      position: relative;
+      margin: 20px;
+      img {
+        width: 100%;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s;
+      }
+      .askicono {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.ask-body {
+  margin: 0px auto;
+  font-size: 17px;
+  text-align: justify;
+  overflow: hidden;
+  position: relative;
+  & > div {
+    padding: 35px 50px;
+  }
+  &::after {
+    content: " ";
+    display: block;
+    border: 27px solid transparent;
+    border-top-color: #f24704;
+    position: absolute;
+    top: 0px;
+    left: 130px;
+  }
+  p {
+    margin: 0;
+  }
+  table,
+  tbody {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  td {
+    margin-right: 20px;
+  }
+}
