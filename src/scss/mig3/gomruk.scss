@@ -41,6 +41,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  a {
+    text-decoration: none;
+  }
 }
 
 .gm-item {
@@ -184,15 +187,21 @@
     width: 350px;
     height: 111px;
     display: inline-block;
+
     h5 {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: #fff;
       width: calc(100% - 150px);
       margin-left: -70px;
       font-size: 16px;
+      color: #fff;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
 }

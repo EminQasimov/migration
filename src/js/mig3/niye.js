@@ -1,8 +1,5 @@
 import '../../scss/mig3/niye.scss';
 
-
-
-
 //
 import './sabitlik';
 import './iqtisadiyyat';
@@ -17,9 +14,9 @@ import './biznes';
 import './investisiya';
 import './10yox';
 
-
 //
 import './biznesyollari';
+import './sektorlar';
 
 //
 import './sahibkarlar';
@@ -31,9 +28,11 @@ import './vergiler';
 //
 
 import './gomruk';
+import './mallar';
+import './yasildehliz';
+import './yasildehlizustunlukleri';
 
-
-// top
+// top menu links
 import './contact';
 import './about';
 import './ask';

@@ -1,0 +1,114 @@
+.dehliz {
+  overflow-x: hidden;
+  .hero {
+    background: url(../public/images/mig3/gomrukbg.jpg) center / cover;
+  }
+}
+
+.dehliz-title {
+  color: #f24704;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  margin: 50px;
+}
+
+.dehliz-wrap {
+  max-width: 1300px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    padding: 10px;
+    .dehliz-item {
+      clip-path: none;
+      margin: 10px;
+    }
+  }
+}
+
+.dehliz-item {
+  flex: 1;
+  min-height: 300px;
+  background: #fff;
+  margin-left: -30px;
+  position: relative;
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(118, 25, 176, 0.5);
+    transition: all 0.3s;
+  }
+  &:hover {
+    &::after {
+      background: rgba(242, 72, 4, 0.5);
+    }
+  }
+  h3 {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    font-size: 24px;
+    width: 80%;
+    margin: 20px auto;
+    text-transform: uppercase;
+    min-height: 86px;
+  }
+  span {
+    display: block;
+    background: #fff;
+    position: relative;
+    z-index: 9;
+    height: 3px;
+    width: 70%;
+    margin: 10px auto;
+    img {
+      float: right;
+      height: 36px;
+      margin-top: -18px;
+      margin-right: -50px;
+    }
+  }
+  p {
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    font-size: 23px;
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+    font-weight: 500;
+    line-height: 26px;
+  }
+}
+.dehliz-in {
+  margin-top: 30px;
+}
+.dehlz-bottom {
+  max-width: 1300px;
+  margin: 40px auto;
+  font-size: 20px;
+}
+.d1 {
+  background: url(../public/images/mig3/dehliz1.jpg) center/cover;
+  clip-path: polygon(0% 0%, 88% 0, 100% 50%, 88% 100%, 0% 100%);
+}
+.d2 {
+  background: url(../public/images/mig3/dehliz2.jpg) center/cover;
+  clip-path: polygon(88% 0, 100% 50%, 88% 100%, 0% 100%, 12% 50%, 0% 0%);
+}
+.d3 {
+  background: url(../public/images/mig3/dehliz3.jpg) center/cover;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 12% 50%, 0% 0%);
+}
