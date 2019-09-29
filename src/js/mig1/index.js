@@ -46,7 +46,7 @@ $(".menu-icon").click(function() {
 window.addEventListener('resize',function() {
   open = false
   window.scrollY < 30 && $(".sticky").css("background", "transparent")
-  if (window.innerWidth > 1024) {
+  if (window.innerWidth > 1150) {
     $(".menu-list").css({
       display: "flex",
       position: "static",
