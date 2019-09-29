@@ -1,0 +1,51 @@
+.mekan {
+  .hero {
+    background: url(../public/images/mig3/olkeler.jpg) center/cover;
+  }
+}
+
+.mekan-title {
+  color: #f24704;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 50px;
+  text-align: center;
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
+}
+
+.mekan-desc {
+  font-size: 20px;
+  margin: 0px auto;
+  padding: 10px;
+  text-align: justify;
+  max-width: 1200px;
+}
+
+.mekan-wrap {
+  display: flex;
+  margin: 0px auto;
+  max-width: 1300px;
+  div {
+    flex: 1;
+    text-align: center;
+    h3 {
+      color: #7519b0;
+      font-weight: 600;
+      font-size: 20px;
+      width: 80%;
+      margin: 20px auto;
+    }
+    img {
+      width: 300px;
+    }
+  }
+}
+
+.mekan-left {
+  border-right: 3px solid #f1f1f1;
+  img {
+    width: 450px !important;
+  }
+}

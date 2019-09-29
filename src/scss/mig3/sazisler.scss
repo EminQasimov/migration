@@ -1,0 +1,200 @@
+.sasiz-wrap {
+  max-width: 1350px;
+  margin: 30px auto;
+  font-size: 1vw;
+}
+
+.sazis-top {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 7px 0 -5px #fff, 0 17px 0 -5px #7519b0;
+  z-index: 9;
+  position: relative;
+  @media (max-width: 1000px) {
+    display: block;
+  }
+  & > div {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    background: #fff;
+  }
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 7px 0 -5px #fff, 0 17px 0 -5px #f24704;
+  }
+}
+
+.sazis-xett1 {
+  display: block;
+  width: 0.4em;
+  height: 10em;
+  background: #f24704;
+  position: absolute;
+  left: 54%;
+  bottom: -1.7em;
+  transform: translate(-50%, 107%);
+  &::after {
+    content: " ";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 9px;
+    background: #f24704;
+    position: relative;
+    bottom: -9.7em;
+    left: -0.3em;
+  }
+}
+
+.sazis-xett2 {
+  display: block;
+  width: 0.4em;
+  height: 27em;
+  background: #f24704;
+  position: absolute;
+  left: 54%;
+  top: 0em;
+  transform: translate(50%, -107%);
+  &::after {
+    content: " ";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 9px;
+    background: #f24704;
+    position: relative;
+    top: -0.7em;
+    left: -0.3em;
+  }
+}
+
+.sazis-abs {
+  width: 13em;
+  background: #7519b0;
+  position: absolute;
+  top: 9em;
+  left: 0;
+  box-shadow: 7px 0 0 0 #fff, 17px 0 0 0 #7519b0;
+  padding: 0.6em 3em;
+  h5 {
+    font-size: 1.3em;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+  }
+  transition: all 0.3s;
+  &:hover {
+    background: #f24704;
+    box-shadow: 7px 0 0 0 #fff, 17px 0 0 0 #f24704;
+  }
+}
+
+.sazis-misir {
+  width: 11em;
+  background: #7519b0;
+  position: absolute;
+  top: 15em;
+  left: 27em;
+  box-shadow: 7px 0 0 0 #fff, 17px 0 0 0 #7519b0;
+  padding: 0.6em 3em;
+  h5 {
+    font-size: 1.3em;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+  }
+  transition: all 0.3s;
+  &:hover {
+    background: #f24704;
+    box-shadow: 7px 0 0 0 #fff, 17px 0 0 0 #f24704;
+  }
+}
+
+.sazis-xett3 {
+  display: block;
+  width: 4em;
+  height: 0.3em;
+  background: #f24704;
+  position: absolute;
+  right: -3.4em;
+  top: 3em;
+  transform: translate(50%, -107%);
+  &::after {
+    content: " ";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 99px;
+    background: #f24704;
+    position: relative;
+    top: -0.4em;
+    left: 3.6em;
+  }
+}
+
+.sazis-xett4 {
+  display: block;
+  width: 8em;
+  height: 0.4em;
+  background: #f24704;
+  position: absolute;
+  right: -5.8em;
+  top: 1.5em;
+  transform: translate(50%, -107%);
+  &::after {
+    content: " ";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 99px;
+    background: #f24704;
+    position: relative;
+    top: -0.4em;
+    left: 7.6em;
+  }
+}
+
+.sazis-bottom {
+  display: flex;
+  width: 75%;
+  box-shadow: 0 -7px 0 -5px #fff, 0 -17px 0 -5px #7519b0;
+  position: relative;
+  right: -25%;
+  flex-wrap: wrap;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 -7px 0 -5px #fff, 0 -17px 0 -5px #f24704;
+  }
+}
+
+.map2 {
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+.sazis-item {
+  background: #7519b0;
+  height: 170px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  transition: all 0.3s;
+  &:hover {
+    background: #f24704;
+  }
+  h5 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+}

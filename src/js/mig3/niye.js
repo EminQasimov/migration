@@ -13,6 +13,11 @@ import './biznes';
 //
 import './investisiya';
 import './10yox';
+import './olkeler';
+import './5amil';
+import './mekan';
+import './sazisler';
+import './tesviq';
 
 //
 import './biznesyollari';

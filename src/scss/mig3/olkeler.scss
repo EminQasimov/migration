@@ -1,0 +1,62 @@
+.olkeler {
+  .hero {
+    background: url(../public/images/mig3/olkeler.jpg) center/cover;
+  }
+}
+.olke-title {
+  color: #f24704;
+  font-weight: 700;
+  font-size: 42px;
+  margin: 70px auto;
+  text-align: center;
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
+}
+
+.olke-wrap {
+  display: flex;
+  margin: 40px;
+  justify-content: space-between;
+  @media (max-width: 1228px) {
+    display: block;
+    .olke-left {
+      margin-bottom: 20px;
+      .olke-item:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.olke-left,
+.olke-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 700px) {
+    display: block;
+    .olke-item {
+      border: none;
+      border-bottom: 4px solid #f4f4f4 !important;
+    }
+  }
+}
+
+.olke-right .olke-item:last-child {
+  border: none !important;
+}
+
+.olke-item {
+  flex: 1;
+  text-align: center;
+  border-right: 4px solid #f4f4f4;
+  img {
+    height: 180px;
+  }
+  h3 {
+    font-weight: 700;
+    color: #474747;
+    margin: 20px auto;
+  }
+}
