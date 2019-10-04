@@ -63,6 +63,14 @@
   }
 }
 
+.last-m3 {
+  img {
+    @media (max-width: 560px) {
+      width: 90% !important;
+      height: auto !important;
+    }
+  }
+}
 .contact-desc {
   opacity: 0;
   color: #fff;

@@ -45,6 +45,9 @@
         opacity: 0;
       }
     }
+    & > div {
+      flex: 1;
+    }
   }
 }
 
@@ -56,6 +59,7 @@
   position: relative;
   & > div {
     padding: 35px 50px;
+    border-bottom: 2px solid #999;
   }
   &::after {
     content: " ";
