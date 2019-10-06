@@ -198,9 +198,9 @@
       z-index: 10;
       perspective: 800px;
 
-      transition: transform .3s;
-      &:hover{
-        transform: scale(1.05)
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(1.05);
       }
       @include hex-small();
 
@@ -222,6 +222,9 @@
         transition: all 400ms ease-out;
         transform-style: preserve-3d;
         transform: rotateY(180deg);
+        @media (max-width: 650px) {
+          margin: 25px auto;
+        }
       }
       .-card {
         // background-size: auto $height;
@@ -260,6 +263,9 @@
         p {
           display: block;
           color: $white;
+          @media (max-width: 900px) {
+            font-size: 14px;
+          }
         }
         p {
           margin: 0;

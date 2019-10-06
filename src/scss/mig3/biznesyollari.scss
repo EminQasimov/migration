@@ -85,10 +85,18 @@
 
 .by-left {
   position: absolute;
-  left: 4em;
+  left: 0em;
   width: 50%;
   height: 100%;
-  //   background: rgba(0, 92, 128, 0.596);
+  @media (max-width: 1450px) {
+    left: 4em;
+  }
+  @media (max-width: 1370px) {
+    left: 8em;
+  }
+  @media (max-width: 1170px) {
+    left: 10em;
+  }
 }
 
 .by-center {
@@ -101,6 +109,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   border: 0.8em solid #7519b0;
+
   &::after {
     content: " ";
     width: 80%;
@@ -168,11 +177,18 @@
 
 .by-right {
   position: absolute;
-  right: 4em;
+  right: 0em;
   width: 50%;
   height: 100%;
-  //   background: rgba(0, 128, 0, 0.486);
-
+  @media (max-width: 1450px) {
+    right: 4em;
+  }
+  @media (max-width: 1370px) {
+    right: 8em;
+  }
+  @media (max-width: 1170px) {
+    right: 10em;
+  }
   .by-item {
     left: auto;
     right: -70%;

@@ -79,6 +79,13 @@
     font-size: 20px;
     cursor: pointer;
     align-items: center;
+    @media (max-width: 650px) {
+      flex-direction: column;
+      & > div {
+        margin-left: 0px !important;
+        margin-bottom: 10px;
+      }
+    }
     // &:hover {
     //   .vicon {
     //     opacity: 0;
@@ -124,6 +131,11 @@
     padding: 0;
     text-align: justify;
     color: #666;
+    @media (max-width: 855px) {
+      top: 0px;
+      left: 0px;
+      width: 100%;
+    }
   }
   #headingTwo {
     img.vicono,
